@@ -1,5 +1,6 @@
 const { createUser } = require('../queries/users.queries')
 const path = require('path')
+
 const multer = require('multer')
 const upload = multer({
     storage: multer.diskStorage({

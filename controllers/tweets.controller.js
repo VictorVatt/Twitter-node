@@ -10,7 +10,7 @@ exports.tweetList = async (req, res, next) => {
 }
 
 exports.tweetNew = (req, res, next) => {
-    res.render('tweets/tweet-form', {tweet: {}, isAuthenticated: req.isAuthenticated(), currentUser: req.user})
+    res.render('tweets/tweet-form', {tweets: {}, isAuthenticated: req.isAuthenticated(), currentUser: req.user})
 }
 
 exports.tweetCreate = async (req, res, next) => {
